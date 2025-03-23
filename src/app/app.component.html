@@ -1,5 +1,8 @@
 <h1 class="text-center display-2 py-3">Studio Booking App</h1>
-
-
-
+<div class="text-center">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary" [routerLink]="['']" routerLinkActive="router-link-active" >Studio List</button>
+    <button type="button" class="btn btn-warning" [routerLink]="['/bookings']" routerLinkActive="router-link-active" >Booking List</button>
+  </div>
+</div>
 <router-outlet />
