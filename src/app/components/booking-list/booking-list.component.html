@@ -1,0 +1,25 @@
+<h2 class="text-center display-6 py-4">Booking List</h2>
+<div class="container">
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Booking Date</th>
+        <th>Booking Hour</th>
+        <th>Mobile No.</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let booking of bookings">
+          <td>{{booking.userName}}</td>
+          <td>{{booking.bookingDate}}</td>
+          <td>{{booking.bookingHour}}</td>
+          <td>{{booking.mobileNo}}</td>
+          <td>{{booking.email}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
