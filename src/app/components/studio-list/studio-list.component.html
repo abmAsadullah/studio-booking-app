@@ -18,7 +18,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let studio of dataList | filter: searchText">
+      <tr *ngFor="let studio of dataList | filterArea: searchText">
           <td>{{studio.Name}}</td>
           <td>{{studio.Type}}</td>
           <td>{{studio.Location.City}}, {{studio.Location.Area}}, {{studio.Location.Address}}</td>

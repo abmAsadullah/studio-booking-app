@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'filterArea'
 })
 export class FilterPipe implements PipeTransform {
 
@@ -10,9 +10,7 @@ export class FilterPipe implements PipeTransform {
     if (!searchText) return items;
     searchText = searchText.toLowerCase();
     return items.filter(item => {
-      return Object.keys(item).some(key => {
-        return item[key] && item[key].toString().toLowerCase().includes(searchText);
-      });
+      return item.Location.Area.toLowerCase().includes(searchText);
     });
   }
 }
